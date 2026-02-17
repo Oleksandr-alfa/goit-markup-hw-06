@@ -108,6 +108,11 @@ img {
 
 
 @media screen and (min-width: 768px) { 
+.page-header {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
 .page-nav,      
 .nav-list,
 .page-address {
@@ -750,9 +755,8 @@ align-items: center;
 .footer-logo-link {
     text-align: center;
     font-weight: 700;
-        font-size: 18px;
     text-decoration: none;
-        /* line-height: 21px; */
+        font-size: 18px;
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
@@ -762,8 +766,6 @@ align-items: center;
 .footer-text {
     font-weight: 400;
         font-size: 16px;
-    
-        /* line-height: 24px; */
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #f4f4fd;
@@ -783,8 +785,6 @@ align-items: center;
 .footer-social-box p {
     font-weight: 500;
         font-size: 16px;
-    
-        /* line-height: 24px; */
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #fff;
@@ -807,8 +807,6 @@ gap: 16px;
 .form-subscribe-label {
     font-weight: 500;
         font-size: 16px;
-    
-        /* line-height: 24px; */
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #fff;
@@ -831,8 +829,6 @@ gap: 16px;
         padding-left: 16px;
         font-weight: 400;
             font-size: 12px;
-        
-            /* line-height: 24px; */
             line-height: 2;
             letter-spacing: 0.04em;
             color: #fff;
@@ -863,8 +859,6 @@ gap: 16px;
             background: #4D5AE5;
             font-weight: 500;
                 font-size: 16px;
-            
-                /* line-height: 24px; */
                 line-height: 1.5;
                 letter-spacing: 0.04em;
                 text-align: center;
@@ -880,6 +874,46 @@ gap: 16px;
     background-color: #31d0aa;
     fill: #fff;
     outline: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    .footer-section {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    .footer-section .container {
+        display: flex;
+        flex-wrap: wrap;
+       flex-direction: row;
+       align-items: flex-start;
+        padding: 96px 108px;
+        gap: 0px;
+    }
+
+        .footer-logo-box {
+            width: 264px;
+            margin-right: 24px;
+            margin-bottom: 72px;
+        }
+
+        .footer-logo-link {
+            text-align: start;
+        }
+
+        .footer-social-box {
+            width: 208px;
+            margin: 0;
+        }
+
+        .form-subscribe {
+            width: 453px;
+            align-items: flex-start;
+        }
+
+        .input-btn-box {
+            flex-direction: row;
+        }
 }
 
 
