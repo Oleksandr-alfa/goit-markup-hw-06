@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-04</title>
+    <title>goit-markup-hw-06</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -53,7 +53,7 @@
             </li>
           </ul>
         </address>
-        <div class="header-burger">
+        <div class="header-burger" data-menu-open>
           <svg class="icon-burger" width="24px" height="24px">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
@@ -66,7 +66,9 @@
       <section class="section-hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="section-hero-btn">Order Service</button>
+          <button type="button" class="section-hero-btn" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- #endregion hero -->
@@ -394,7 +396,37 @@
           <ul class="portfolio-list">
             <li class="portfolio-card">
               <div class="overlay-img">
-                <img
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-portfolio-d/BankingApp-d.jpg    1x,
+                      ./images/img-portfolio-d/BankingApp-d@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-portfolio-t/BankingApp-t.jpg    1x,
+                      ./images/img-portfolio-t/BankingApp-t@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-portfolio-m/BankingApp-m.jpg    1x,
+                      ./images/img-portfolio-m/BankingApp-m@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="portfolio-card-img"
+                    src="./images/img-portfolio-m/BankingApp-m.jpg"
+                    alt="Banking App"
+                    width="288"
+                    height="280"
+                  />
+                </picture>
+                <!-- <img
                   class="portfolio-card-img"
                   srcset="
                     ./images/bankingapp.jpg    1x,
@@ -404,7 +436,7 @@
                   alt="Banking App"
                   width="360"
                   height="300"
-                />
+                /> -->
                 <div class="overlay">
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -420,7 +452,37 @@
             </li>
             <li class="portfolio-card">
               <div class="overlay-img">
-                <img
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-portfolio-d/CashlessPayment-d.jpg    1x,
+                      ./images/img-portfolio-d/CashlessPayment-d@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-portfolio-t/CashlessPayment-t.jpg    1x,
+                      ./images/img-portfolio-t/CashlessPayment-t@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-portfolio-m/CashlessPayment-m.jpg    1x,
+                      ./images/img-portfolio-m/CashlessPayment-m@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="portfolio-card-img"
+                    src="./images/img-portfolio-m/CashlessPayment-m.jpg"
+                    alt="Cashless Payment"
+                    width="288"
+                    height="280"
+                  />
+                </picture>
+                <!-- <img
                   class="portfolio-card-img"
                   srcset="
                     ./images/cashlesspayment.jpg    1x,
@@ -430,7 +492,7 @@
                   alt="Cashless Payment"
                   width="360"
                   height="300"
-                />
+                /> -->
                 <div class="overlay">
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -446,7 +508,37 @@
             </li>
             <li class="portfolio-card">
               <div class="overlay-img">
-                <img
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-portfolio-d/MeditationApp-d.jpg    1x,
+                      ./images/img-portfolio-d/MeditationApp-d@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-portfolio-t/MeditationApp-t.jpg    1x,
+                      ./images/img-portfolio-t/MeditationApp-t@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-portfolio-m/MeditationApp-m.jpg    1x,
+                      ./images/img-portfolio-m/MeditationApp-m@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="portfolio-card-img"
+                    src="./images/img-portfolio-m/MeditationApp-m.jpg"
+                    alt="Meditation App"
+                    width="288"
+                    height="280"
+                  />
+                </picture>
+                <!-- <img
                   class="portfolio-card-img"
                   srcset="
                     ./images/meditationapp.jpg    1x,
@@ -456,7 +548,7 @@
                   alt="Meditation App"
                   width="360"
                   height="300"
-                />
+                /> -->
                 <div class="overlay">
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -472,7 +564,37 @@
             </li>
             <li class="portfolio-card">
               <div class="overlay-img">
-                <img
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-portfolio-d/TaxiService-d.jpg    1x,
+                      ./images/img-portfolio-d/TaxiService-d@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-portfolio-t/TaxiService-t.jpg    1x,
+                      ./images/img-portfolio-t/TaxiService-t@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-portfolio-m/TaxiService-m.jpg    1x,
+                      ./images/img-portfolio-m/TaxiService-m@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="portfolio-card-img"
+                    src="./images/img-portfolio-m/TaxiService-m.jpg"
+                    alt="Taxi Service"
+                    width="288"
+                    height="280"
+                  />
+                </picture>
+                <!-- <img
                   class="portfolio-card-img"
                   srcset="
                     ./images/taxiservice.jpg    1x,
@@ -482,7 +604,7 @@
                   alt="Taxi Service"
                   width="360"
                   height="300"
-                />
+                /> -->
                 <div class="overlay">
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -498,7 +620,37 @@
             </li>
             <li class="portfolio-card">
               <div class="overlay-img">
-                <img
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-portfolio-d/ScreenIllustrations-d.jpg    1x,
+                      ./images/img-portfolio-d/ScreenIllustrations-d@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-portfolio-t/ScreenIllustrations-t.jpg    1x,
+                      ./images/img-portfolio-t/ScreenIllustrations-t@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-portfolio-m/ScreenIllustrations-m.jpg    1x,
+                      ./images/img-portfolio-m/ScreenIllustrations-m@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="portfolio-card-img"
+                    src="./images/img-portfolio-m/ScreenIllustrations-m.jpg"
+                    alt="Taxi Service"
+                    width="288"
+                    height="280"
+                  />
+                </picture>
+                <!-- <img
                   class="portfolio-card-img"
                   srcset="
                     ./images/screenillustrations.jpg    1x,
@@ -508,7 +660,7 @@
                   alt="Screen Illustrations"
                   width="360"
                   height="300"
-                />
+                /> -->
                 <div class="overlay">
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -524,7 +676,37 @@
             </li>
             <li class="portfolio-card">
               <div class="overlay-img">
-                <img
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-portfolio-d/OnlineCourses-d.jpg    1x,
+                      ./images/img-portfolio-d/OnlineCourses-d@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-portfolio-t/OnlineCourses-t.jpg    1x,
+                      ./images/img-portfolio-t/OnlineCourses-t@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img-portfolio-m/OnlineCourses-m.jpg    1x,
+                      ./images/img-portfolio-m/OnlineCourses-m@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="portfolio-card-img"
+                    src="./images/img-portfolio-m/OnlineCourses-m.jpg"
+                    alt="Taxi Service"
+                    width="288"
+                    height="280"
+                  />
+                </picture>
+                <!-- <img
                   class="portfolio-card-img"
                   srcset="
                     ./images/onlinecourses.jpg    1x,
@@ -534,7 +716,7 @@
                   alt="Online Courses"
                   width="360"
                   height="300"
-                />
+                /> -->
                 <div class="overlay">
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -618,9 +800,9 @@
       </div>
     </footer>
 
-    <div class="mobile-menu">
+    <div class="mobile-menu" data-menu>
       <div class="container">
-        <button class="menu-close-btn" type="button">
+        <button class="menu-close-btn" type="button" data-menu-close>
           <svg class="icon" width="8px" height="8px">
             <use href="./images/icons.svg#icon-close-btn"></use>
           </svg>
@@ -684,9 +866,9 @@
         </ul>
       </div>
     </div>
-    <div class="backdrop is-open">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button class="modal-close-btn" type="button">
+        <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="icon" width="8px" height="8px">
             <use href="./images/icons.svg#icon-close-btn"></use>
           </svg>
@@ -756,5 +938,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
