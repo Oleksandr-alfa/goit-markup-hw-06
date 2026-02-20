@@ -1,3 +1,4 @@
+<!-- #region head -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -19,6 +20,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+  <!-- #endregion head -->
   <body>
     <!-- #region header -->
     <header class="page-header">
@@ -53,11 +55,11 @@
             </li>
           </ul>
         </address>
-        <div class="header-burger" data-menu-open>
+        <button class="header-burger" type="button" data-menu-open>
           <svg class="icon-burger" width="24px" height="24px">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
-        </div>
+        </button>
       </div>
     </header>
     <!-- #endregion header -->
@@ -735,6 +737,8 @@
       </section>
       <!-- #endregion portfolio -->
     </main>
+    <!-- #region footer -->
+
     <footer class="footer-section">
       <div class="container">
         <div class="footer-logo-box">
@@ -799,7 +803,8 @@
         </form>
       </div>
     </footer>
-
+    <!-- #endregion footer -->
+    <!-- #region mobile menu -->
     <div class="mobile-menu" data-menu>
       <div class="container">
         <button class="menu-close-btn" type="button" data-menu-close>
@@ -866,6 +871,8 @@
         </ul>
       </div>
     </div>
+    <!-- #endregion mobile menu -->
+    <!-- #region backdrop -->
     <div class="backdrop" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
@@ -938,6 +945,7 @@
         </form>
       </div>
     </div>
+    <!-- #endregion backdrop -->
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>
