@@ -365,7 +365,10 @@ display: flex;
     display: flex;
     flex-wrap: wrap;
    gap: 72px;
+}
 
+.featurs-item {
+width: 100%;
 }
 
 .featurs-icon {
@@ -958,14 +961,18 @@ margin: 0 120px 0 0;
     outline: none;
 }
 
-.footer-social-box {
+/* .footer-social-box {
     margin-right: 80px;
-}
+} */
 
 .footer-social-link .link:focus,
 .footer-social-link .link:hover {
     background-color: #31d0aa;
     outline: none;
+}
+
+.form-subscribe {
+    margin-left: auto;
 }
 
 .input-btn-box {
