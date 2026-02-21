@@ -2,6 +2,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #FFFFFF;
+    color: #434455;
     margin: 0;
 }
 
@@ -107,10 +108,12 @@ img {
 .header-burger {
     fill: #2f2f37;
     border: none;
-    background-color: inherit;
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+
 }
 
 
@@ -181,6 +184,10 @@ img {
     bottom: -1px;
 }
 
+.page-address {
+    font-style: normal;
+}
+
 .address-list {
     display: flex;
     flex-direction: column;
@@ -188,7 +195,6 @@ img {
 }
 
 .contacts-link {
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
